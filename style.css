@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'League Spartan', sans-serif;
+}
+body{
+    background:linear-gradient(#9087CA 100%,#C75495 100%,#DE3A08) 100%;
+    width: 100%;
+    height: 100%;
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav .manu ul{
+    display: flex;
+    justify-content: center;
+    margin-right: 500px;
+}
+nav .manu ul li{
+    margin-left: 30px;
+    list-style: none;
+}
+nav .manu ul li a{
+    color:#454545;
+    text-decoration: none;
+
+
+}
+nav .logo img {
+    width: 150px;
+}
+.contarner{
+    width: 950px;
+    height: 100%;
+    background: #FFFDF4;
+    margin: 20px auto;
+    border-radius: 30px;
+    padding: 30px;
+    box-shadow: -15px 12px 50px #00000044;
+    margin-bottom: 86px;
+}
+.contarner .body{
+    width: 40%;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+.body .title{
+    font-size: 2.3em;
+    margin-bottom: 20px;
+}
+.body .title img{
+   width: 250px;
+}
+.body .text {
+    margin-bottom: 30px;
+    width: 250px;
+}
+.btn button{
+    font-size: 1.2em;
+    cursor:pointer;
+}
+.btn button:nth-child(2){
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    border: none;
+    color:#1B18F9;
+}
+.btn button:nth-child(1){
+    background: linear-gradient(60deg, #0368FF ,#C27FCF);
+    border: none;
+    padding: 15px 5px;
+    width: 200px;
+    border-radius: 20px;
+    color:#FFFFFF;
+    animation-name: emp;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+.btn button img{
+    width: 20px;
+    margin-right: 5px;
+}
+.btn{
+    display: flex;
+    width: 300px;
+    margin-bottom: 150px;
+}
+.imgconrcation {
+    background-color: red;
+    right: 200px;
+    top:0px;
+    position: absolute;
+    right: 0;
+    width: 50%;
+}
+.flex {
+    display: flex;
+}
+.imgconrcation img{
+    width: 400px;
+}
+.imgconrcation img:nth-child(1) {
+    width: 475px;
+    height: 500px;
+    position: fixed;
+    top: 20px;
+}
+.imgconrcation img:nth-child(2) {
+    position: fixed;
+    top: 20px;
+    width: 475px;
+    animation-name: img;
+    animation-duration: 3s;
+    animation-iteration-count:1;
+}
+.imgconrcation img:nth-child(3) {
+    position: absolute;
+    width: 50px;
+    top: 170px;
+    animation-name: imgcolor;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes imgcolor {
+    0%{
+        transform: translate(0%);
+    }
+    50%{
+        transform: translate(-50px,-30px);
+    }
+    100%{
+        transform: translate(0%);
+    }
+}
+@keyframes img {
+    0%{
+        transform: translate(500px,-100px);
+        width: 300px;
+    }
+    50%{
+        transform: translate(300px,-100px);
+    }
+    100%{
+        transform: translate(0%);
+    }
+}
+@keyframes emp {
+    0%{
+        background: linear-gradient(0deg, #0368FF ,#C27FCF);
+    }
+    10%{
+        background: linear-gradient(100deg, #0368FF ,#C27FCF);
+    }
+    20%{
+        background: linear-gradient(230deg, #0368FF ,#C27FCF);
+    }
+    30%{
+        background: linear-gradient(260deg, #0368FF ,#C27FCF);
+    }
+    40%{
+        background: linear-gradient(330deg, #0368FF ,#C27FCF);
+    }
+    50%{
+        background: linear-gradient(360deg, #0368FF ,#C27FCF);
+    }
+    60%{
+        background: linear-gradient(330deg, #0368FF ,#C27FCF);
+    }
+    70%{
+        background: linear-gradient(260deg, #0368FF ,#C27FCF);
+    }
+    80%{
+        background: linear-gradient(230deg, #0368FF ,#C27FCF);
+    }
+    90%{
+        background: linear-gradient(100deg, #0368FF ,#C27FCF);
+    }
+    100%{
+        background: linear-gradient(0deg, #0368FF ,#C27FCF);
+    }
+}
